@@ -16,7 +16,7 @@ public class Factura {
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
-
+    
     @Column(name="creando_en")
     private Date creadoEn;
 
