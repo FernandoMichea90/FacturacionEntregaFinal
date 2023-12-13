@@ -1,13 +1,13 @@
-package com.example.FacturacionSegundaEntregaMichea;
+package com.example.FacturacionEntregaFinal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FacturacionSegundaEntregaMicheaApplication {
+public class FacturacionEntregaFinal {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FacturacionSegundaEntregaMicheaApplication.class, args);
+		SpringApplication.run(FacturacionEntregaFinal.class, args);
 	}
 
 }

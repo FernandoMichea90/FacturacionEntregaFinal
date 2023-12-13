@@ -1,4 +1,4 @@
-package com.example.FacturacionSegundaEntregaMichea.model;
+package com.example.FacturacionEntregaFinal.model;
 import java.time.LocalDate;
 
 import jakarta.persistence.*;

@@ -1,4 +1,4 @@
-package com.example.FacturacionSegundaEntregaMichea.model;
+package com.example.FacturacionEntregaFinal.model;
 
 import jakarta.persistence.*;
 import lombok.ToString;

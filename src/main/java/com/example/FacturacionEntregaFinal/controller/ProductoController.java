@@ -1,8 +1,10 @@
-package com.example.FacturacionSegundaEntregaMichea.controller;
-import com.example.FacturacionSegundaEntregaMichea.service.ProductoService;
-import com.example.FacturacionSegundaEntregaMichea.model.Producto;
+package com.example.FacturacionEntregaFinal.controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.FacturacionEntregaFinal.model.Producto;
+import com.example.FacturacionEntregaFinal.service.ProductoService;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;

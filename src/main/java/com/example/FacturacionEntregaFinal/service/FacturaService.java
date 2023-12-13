@@ -1,12 +1,13 @@
-package com.example.FacturacionSegundaEntregaMichea.service;
+package com.example.FacturacionEntregaFinal.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.example.FacturacionEntregaFinal.model.Factura;
+import com.example.FacturacionEntregaFinal.repository.FacturaRepository;
+
 import java.util.List;
-import com.example.FacturacionSegundaEntregaMichea.repository.FacturaRepository;
 
 import jakarta.persistence.EntityNotFoundException;
-
-import com.example.FacturacionSegundaEntregaMichea.model.Factura;
 
 
 @Service

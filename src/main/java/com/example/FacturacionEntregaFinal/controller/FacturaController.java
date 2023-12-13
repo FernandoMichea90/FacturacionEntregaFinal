@@ -1,11 +1,14 @@
-package com.example.FacturacionSegundaEntregaMichea.controller;
+package com.example.FacturacionEntregaFinal.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.example.FacturacionSegundaEntregaMichea.service.FacturaService;
+
+import com.example.FacturacionEntregaFinal.model.Factura;
+import com.example.FacturacionEntregaFinal.service.FacturaService;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
-import com.example.FacturacionSegundaEntregaMichea.model.Factura;
+
 import java.util.List;
 
 @RequestMapping("/factura")
