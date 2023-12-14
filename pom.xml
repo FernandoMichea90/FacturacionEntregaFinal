@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>FacturacionSegundaEntregaMichea</artifactId>
+	<artifactId>FacturacionEntregaFinal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>FacturacionSegundaEntregaMichea</name>
+	<name>FacturacionEntregaFinal</name>
 	<description>Segunda entrega facturacion - CoderHouse</description>
 	<properties>
 		<java.version>17</java.version>
