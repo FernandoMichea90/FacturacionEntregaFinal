@@ -13,7 +13,6 @@ public class Producto {
     private Integer id;
     private String descripcion;
     private String codigo;
-    private Integer stock;
-    private Double precio;
+    private Integer precio;
 
 }

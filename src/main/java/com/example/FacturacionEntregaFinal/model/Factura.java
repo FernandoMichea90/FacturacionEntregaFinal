@@ -22,4 +22,14 @@ public class Factura {
 
     private Double total;
 
+    // Constructor.
+    public Factura(){
+    }
+    // Constructor con parametros.
+    public Factura(Cliente cliente,Date creadoEn,Double total){
+        this.cliente=cliente;
+        this.creadoEn=creadoEn; 
+        this.total=total;
+    }
+
 }

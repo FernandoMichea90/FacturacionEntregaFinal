@@ -37,7 +37,7 @@ public class ProductoController {
    public ResponseEntity<Producto> guardarProducto(@RequestBody Producto producto){
         Producto detalle=productoService.guardarProducto(producto);
         return  ResponseEntity.ok(detalle);
-   }
+   }                        
     
 }
 

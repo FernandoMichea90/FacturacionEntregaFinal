@@ -18,10 +18,22 @@ public class DetalleFactura {
     private Factura factura;
 
     private Integer cantidad;
-    private Double precio;
+    private Integer precio;
 
     @ManyToOne
     @JoinColumn(name = "producto_id")
     private Producto producto;
+
+    // Constructor.
+    public DetalleFactura() {
+    }
+
+    // Constructor con parametros.
+    public DetalleFactura(Factura factura , Integer cantidad, Integer precio,Producto producto) {
+        this.factura = factura;
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.producto = producto;
+    }
 
 }

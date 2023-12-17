@@ -21,8 +21,7 @@ CREATE TABLE producto (
   id INT AUTO_INCREMENT PRIMARY KEY,
   codigo VARCHAR(255),
   descripcion TEXT,
-  precio DOUBLE,
-  stock INT
+  precio DOUBLE
 );
 
 -- Creación de la tabla detalle_factura
@@ -35,3 +34,6 @@ CREATE TABLE detalle_factura (
   FOREIGN KEY (factura_id) REFERENCES factura(id),
   FOREIGN KEY (producto_id) REFERENCES producto(id)
 );
+
+--borrar lo columna stock de producto.
+ALTER TABLE producto DROP COLUMN stock;
