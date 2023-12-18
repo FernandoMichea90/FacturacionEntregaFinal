@@ -1,3 +1,9 @@
+-- Borrar la base de datos ventas 
+DROP DATABASE IF EXISTS ventas; 
+-- crear la base de datos de ventas
+CREATE DATABASE ventas;
+
+
 -- Creación de la tabla cliente
 CREATE TABLE cliente (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -36,4 +42,4 @@ CREATE TABLE detalle_factura (
 );
 
 --borrar lo columna stock de producto.
-ALTER TABLE producto DROP COLUMN stock;
+-- ALTER TABLE producto DROP COLUMN stock;

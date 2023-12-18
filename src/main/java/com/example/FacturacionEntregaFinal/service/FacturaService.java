@@ -61,17 +61,14 @@ public class FacturaService {
     public Factura guardarFactura(FacturaDTO factura){
 
         Optional<Cliente> cliente= clienteRepository.findById(factura.getIdCliente());
-        Factura newFactura= new Factura(cliente.get(),new Date(),0.0);
         // Se crea la nueva factura en la base de datos
          Factura nuevaFactura=facturaRepository.save(new Factura(cliente.get(),new Date(),0.0));
         
          // Variable para almacenar el total de la factura
         Double totalFactura=0.0;
          // recorrer los productos 
-        // factura.getListaProductos().forEach(producto->
         for (ProductoDTO producto:factura.getListaProductos())
         {
-             System.out.println("Dentro de productos ");
              // buscar el producto en la base de datos
             Producto productoBD=productoRepository.findById(producto.getIdProducto()).orElseThrow(()->new EntityNotFoundException());
             // Crear el detalle de la factura
@@ -91,7 +88,7 @@ public class FacturaService {
         nuevaFactura= facturaRepository.save(nuevaFactura);
 
                       
-        return newFactura;
+        return nuevaFactura;
     }
 
 }

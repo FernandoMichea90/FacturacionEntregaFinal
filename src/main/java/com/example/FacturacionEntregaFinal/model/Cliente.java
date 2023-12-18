@@ -1,5 +1,5 @@
 package com.example.FacturacionEntregaFinal.model;
-import java.time.LocalDate;
+import java.util.Date;
 
 import jakarta.persistence.*;
 
@@ -19,6 +19,16 @@ public class Cliente {
     private String numeroDocumento;
 
     @Column(name = "fecha_nacimiento")
-    private LocalDate fechaNacimiento;
+    private Date fechaNacimiento;
+
+    public Cliente() {
+    }
+    //Crear el contructor con todos los parametros. 
+    public Cliente(String nombre, String apellido, String numeroDocumento, Date fechaNacimiento) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.numeroDocumento = numeroDocumento;
+        this.fechaNacimiento = fechaNacimiento;
+    }
     // Constructor, getters, setters, etc.
 }
